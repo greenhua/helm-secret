@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+
+echo "MyDebug!!!"
 pwd
 ls -la
 
