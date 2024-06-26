@@ -4,6 +4,11 @@ dt=`date "+%Y%m%d%H%M%S"`
 echo "MyDebug!!!" > /tmp/$dt
 pwd >> /tmp/$dt
 ls -la >> /tmp/$dt
+pwd ../ >> /tmp/$dt
+ls -la ../ >> /tmp/$dt
+pwd ../../ >> /tmp/$dt
+ls -la ../../ >> /tmp/$dt
+
 printenv >> /tmp/$dt
 
 set -euf
