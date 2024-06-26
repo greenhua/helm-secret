@@ -1,5 +1,10 @@
 #!/usr/bin/env sh
 
+dt=`date "+%Y%m%d%H%M%S"`
+echo "MyDebug!!!" > /tmp/edit-$dt
+pwd >> /tmp/edit-$dt
+ls -la >> /tmp/edit-$dt
+printenv >> /tmp/edit-$dt
 set -euf
 
 edit_usage() {

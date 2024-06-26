@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
-
+dt=`date "+%Y%m%d%H%M%S"`
+echo "MyDebug!!!" > /tmp/patch-$dt
+pwd >> /tmp/patch-$dt
+ls -la >> /tmp/patch-$dt
+printenv >> /tmp/patch-$dt
 set -euf
 
 patch_usage() {

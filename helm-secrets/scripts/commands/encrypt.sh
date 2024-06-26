@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
-
+dt=`date "+%Y%m%d%H%M%S"`
+echo "MyDebug!!!" > /tmp/encrypt-$dt
+pwd >> /tmp/encrypt-$dt
+ls -la >> /tmp/encrypt-$dt
+printenv >> /tmp/encrypt-$dt
 set -euf
 
 enc_usage() {

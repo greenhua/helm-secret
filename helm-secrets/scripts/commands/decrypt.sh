@@ -1,5 +1,10 @@
 #!/usr/bin/env sh
 
+dt=`date "+%Y%m%d%H%M%S"`
+echo "MyDebug!!!" > /tmp/decrypt-$dt
+pwd >> /tmp/decrypt-$dt
+ls -la >> /tmp/decrypt-$dt
+printenv >> /tmp/decrypt-$dt
 set -euf
 
 dec_usage() {

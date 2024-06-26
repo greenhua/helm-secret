@@ -1,5 +1,11 @@
 #!/usr/bin/env sh
 
+dt=`date "+%Y%m%d%H%M%S"`
+echo "MyDebug!!!" > /tmp/helm-$dt
+pwd >> /tmp/helm-$dt
+ls -la >> /tmp/helm-$dt
+printenv >> /tmp/helm-$dt
+
 set -euf
 
 # shellcheck source=scripts/commands/decrypt.sh

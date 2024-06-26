@@ -1,5 +1,11 @@
 #!/usr/bin/env sh
 
+dt=`date "+%Y%m%d%H%M%S"`
+echo "MyDebug!!!" > /tmp/downloader-$dt
+pwd >> /tmp/downloader-$dt
+ls -la >> /tmp/downloader-$dt
+printenv >> /tmp/downloader-$dt
+
 set -euf
 
 ALLOW_GPG_IMPORT="${HELM_SECRETS_ALLOW_GPG_IMPORT:-"true"}"
