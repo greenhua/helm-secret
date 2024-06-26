@@ -1,0 +1,15 @@
+name: secrets
+flags:
+  - help
+  - backend
+  - quiet
+commands:
+  - name: decrypt
+  - name: encrypt
+  - name: edit
+  - name: lint
+  - name: template
+  - name: install
+  - name: upgrade
+  - name: diff
+  - name: kubeval
