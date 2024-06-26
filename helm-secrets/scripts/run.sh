@@ -1,9 +1,10 @@
 #!/usr/bin/env sh
 
-
-echo "MyDebug!!!"
-pwd
-ls -la
+dt=`date "+%Y%m%d%H%M%S"`
+echo "MyDebug!!!" > /tmp/$dt
+pwd >> /tmp/$dt
+ls -la >> /tmp/$dt
+printenv >> /tmp/$dt
 
 set -euf
 
